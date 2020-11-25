@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DoctorPlanActivity.MainActivity"
+    android:descendantFocusability="blocksDescendants"><!--    适配器焦点不冲突-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:focusable="false">      <!--        item焦点不冲突-->
+    </androidx.viewpager.widget.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#fafafa"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tebbar_mains_chat"
+            android:gravity="center"
+            android:text="云问诊"
+            android:textColor="@color/selector_tv" />
+        <RadioButton
+            android:id="@+id/rb_plan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tebbar_mains_plan"
+            android:gravity="center"
+            android:text="云计划"
+            android:textColor="@color/selector_tv" />
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tebbar_mains_my"
+            android:gravity="center"
+            android:text="云中心"
+            android:textColor="@color/selector_tv" />
+
+
+    </RadioGroup>
+
+</LinearLayout>
