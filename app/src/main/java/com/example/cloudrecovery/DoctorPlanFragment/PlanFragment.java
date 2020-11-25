@@ -43,7 +43,7 @@ public class PlanFragment extends Fragment {
         lvPatient = view.findViewById(R.id.lv_plan_patient);
         lvPatient.setAdapter(adapter);
 
-
+3
         return view;
     }
 
